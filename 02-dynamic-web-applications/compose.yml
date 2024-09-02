@@ -1,0 +1,30 @@
+name: dynamic-web-applications
+
+services:
+
+  webserver:
+    container_name: webserver
+    build:
+      context: .
+      args:
+        HOST_UID: ${HOST_UID}
+        HOST_GID: ${HOST_GID}
+    volumes:
+      - ./:/var/www/html/app
+    ports:
+      - '80:80'
+
+  database:
+    container_name: database
+    image: mysql:8.0.36
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_DATABASE=development
+    ports:
+      - '3306:3306'
+    volumes:
+        - dynamic-web-applications-database:/var/lib/mysql
+
+volumes:
+  dynamic-web-applications-database:
+    name: dynamic-web-applications-database
