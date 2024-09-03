@@ -16,7 +16,7 @@
     </nav>
 
     <main class="flex items-center justify-center h-full bg-pink-400">
-        <h1 class="text-white font-bold text-2xl">This is the Home Page</h1>
+        <h1 class="text-white font-bold text-2xl">This is the About Page</h1>
     </main>
 </body>
 
