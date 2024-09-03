@@ -10,9 +10,9 @@
 
 <body class="font-mono flex flex-col h-screen">
     <nav class="bg-gray-200 py-6 px-6 space-x-4 bg-pink-600">
-        <a href="/index.php" class="text-white font-bold">Home</a>
-        <a href="/about.php" class="text-white font-bold">About</a>
-        <a href="/contact.php" class="text-white font-bold">Contact</a>
+        <a href="/" class="text-white font-bold">Home</a>
+        <a href="/about" class="text-white font-bold">About</a>
+        <a href="/contact" class="text-white font-bold">Contact</a>
     </nav>
 
     <main class="flex items-center justify-center h-full bg-pink-400">
