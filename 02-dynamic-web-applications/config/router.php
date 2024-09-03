@@ -2,10 +2,12 @@
 
 $route = $_SERVER['REQUEST_URI'];
 
-if ($route === '/') {
-    require_once('controllers/home.php');
-} elseif ($route === '/about') {
-    require_once('controllers/about.php');
-} elseif ($route === '/contact') {
-    require_once('controllers/contact.php');
+$routes = [
+    '/' => 'controllers/home.php',
+    '/about' => 'controllers/about.php',
+    '/contact' => 'controllers/contact.php',
+];
+
+if (array_key_exists($route, $routes)) {
+    require_once($routes[$route]);
 }
