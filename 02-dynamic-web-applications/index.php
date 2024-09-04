@@ -1,5 +1,5 @@
 <?php
 
-$greeting = "Hello, World!";
+require_once('functions.php');
 
-require_once "index.view.php";
+require_once('config/router.php');
